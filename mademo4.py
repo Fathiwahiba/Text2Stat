@@ -18,7 +18,7 @@ if response1.ok:
             notreLi = nbr[index]
 
     notreA = notreLi.find('a')
-    nombre = notreA.text
+    nombre = notreA.text  #nombre de pages existantes qu'on va parcourir
 
     url2 = 'http://www.ump.ma/fr/actualite?page=1'
     response2 = requests.get(url2)
@@ -28,10 +28,10 @@ if response1.ok:
         divs = soup2.findAll('div', class_='caption')
         for div in divs: #on a 9
             a = div.find('a')
-            link = a['href'] #pour chaque div des 9 on recupere le href dans a
-            links.append(link) #on les met dans une liste 
+            link = a['href']  #pour chaque div des 9 on recupere le href dans a
+            links.append(link)  #on les met dans une liste 
 
-        for l in links: #on parcoure la liste contenant les 9 liens
+        for l in links:  #on parcoure la liste contenant les 9 liens
             url3 = l
             response3 = requests.get(url3)
 
