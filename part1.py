@@ -22,7 +22,6 @@ def nbr_pages():
         return n
 
 
-# print(nbr_pages())
 
 
 # trouver les liens des articles contenus dans une page
@@ -42,7 +41,6 @@ def liens(number):
     return les_liens
 
 
-# print(liens("1"))
 
 
 # trouver les titres contenus dans un lien
@@ -58,7 +56,6 @@ def titres(lien):
     return les_h
 
 
-# print(titres('http://www.ump.ma/fr/actualite/jamaa-mhmd-alaol-bojd-tokaa-atfak-shrak-maa-alsfar-alasbany-balrbat'))
 
 
 # globalement,
