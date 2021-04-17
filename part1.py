@@ -63,10 +63,9 @@ def titres(lien):
 
 # globalement,
 nombre_pages = nbr_pages()
-inbr: int = 1
+inbr = 1
 while inbr <= nombre_pages:
-    print(inbr)
-    istr: str = str(inbr)
+    istr = str(inbr)
     links = liens(istr)
     for link in links:
         titles = titres(link)
@@ -76,4 +75,3 @@ while inbr <= nombre_pages:
             output.write("\n")
         output.close()
     inbr = inbr + 1
-    print("ok")
